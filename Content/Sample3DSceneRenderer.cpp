@@ -75,7 +75,7 @@ void Sample3DSceneRenderer::Update(DX::StepTimer const& timer)
 		double totalRotation = timer.GetTotalSeconds() * radiansPerSecond;
 		float radians = static_cast<float>(fmod(totalRotation, XM_2PI));
 
-		Rotate(radians);
+		Rotate(0.f);
 	}
 }
 
